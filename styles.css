@@ -367,6 +367,7 @@ nav {
   color: var(--text-dark);
 }
 
+
 .blog__card__footer {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -440,6 +441,106 @@ nav {
     transform: translateX(calc(-50% - 5px));
   }
 }
+
+/* Form */
+.section_form_container {
+  max-height:2%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  ),
+  url('/assets/fondoForm2.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.form_grid {
+  display: grid;
+  grid-gap: 2em;
+  justify-items: center;
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+  font-size: 2rem;
+  font-family: var(--header-font);
+  color: var(--white);
+  text-align: center;
+}
+
+.form_grid::before,
+.form_grid::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: 100px;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 1px solid var(--text-light);
+  border-bottom: 1px solid var(--text-light);
+  z-index: -1;
+}
+
+.form_grid::after {
+  right: 100%;
+}
+
+.form_grid::before {
+  left: 100%;
+}
+
+.form_container {
+  background-color: rgb(1, 1, 1); 
+  background-color:(var--text-light); 
+  border: 1px solid #140101;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form_control {
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  padding: 0.5em;
+  width: 100%;
+  background-color:var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button {
+  text-align: center;
+}
+
+.error {
+  color: #660000; 
+  font-size: 1em;
+  margin-top: 0.5em;
+} 
 
 .footer {
   overflow: hidden;
@@ -679,7 +780,7 @@ nav {
   }
 
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: left;
     gap: 2rem;
   }
@@ -692,3 +793,6 @@ nav {
     margin-inline-start: unset;
   }
 }
+
+
+
