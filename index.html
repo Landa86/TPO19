@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link href="./contacto.html">
 
   <title>RECETAS | GRUPO19 </title>
 </head>
@@ -32,7 +33,7 @@
         </li>
         <li><a href="#feature">Videos</a></li>
         <li><a href="#blog">Ultimas Recetas</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
     <div class="section__container header__container">
@@ -239,57 +240,6 @@
     </div>
   </section>
 
-  <section class="section_form_container">
-    <div class="form_grid">
-      <div></div>
-      <h2 class="form_grid">Contactanos</h2>
-      <div class="form_container">
-        <form action="#" id="formulario" method="GET" novalidate>
-          <div class="form_control">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="given-name" required>
-            <div class="error" id="error-nombre"></div>
-          </div>
-          <div class="form_control">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido" autocomplete="family-name" required>
-            <div class="error" id="error-apellido"></div>
-          </div>
-          <div class="form_control">
-            <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo" required>
-              <option value="">Seleccione su sexo</option>
-              <option value="masculino">Masculino</option>
-              <option value="femenino">Femenino</option>
-              <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
-            </select>
-            <div class="error" id="error-sexo"></div>
-          </div>
-          <div class="form_control">
-            <label for="correo">Email</label>
-            <input type="email" name="email" id="correo" placeholder="Correo electrónico" autocomplete="email" required>
-            <div class="error" id="error-correo"></div>
-          </div>
-          <div class="form_control">
-            <textarea cols="40" rows="5" placeholder="Escribí tu mensaje" id="mensaje" autocomplete="off"></textarea>
-          </div>
-          <div class="form_control">
-            <div class="">
-              <input type="checkbox" id="aceptar-terminos">
-              <label for="aceptar-terminos">Acepto términos y condiciones</label>
-            </div>
-            <div class="error" id="error-terminos"></div>
-          </div>
-          <div class="button">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-        <div class="mensaje-enviado" id="mensaje-enviado">
-          Su mensaje se envió correctamente.
-        </div>
-      </div>
-    </div>
-  </section>
 
   <footer class="footer" id="contact">
     <div class="footer__col">
@@ -309,6 +259,12 @@
       <i class="ri-arrow-up-s-line"></i><span>Inicio</span>
     </a>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
