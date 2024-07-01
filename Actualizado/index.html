@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <title>RECETAS | GRUPO19</title>
+  <link href="./contacto.html">
+
+  <title>RECETAS | GRUPO19 </title>
 </head>
+
 <body>
   <header class="header" id="home">
     <nav>
@@ -21,7 +25,7 @@
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#team">Nuestros Cocineros</a></li>
-        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#about"> Sobre Nosotros</a></li>
         <li class="nav__logo">
           <a href="#">
             <img src="assets/logo.png" alt="logo" />
@@ -29,14 +33,16 @@
         </li>
         <li><a href="#feature">Videos</a></li>
         <li><a href="#blog">Ultimas Recetas</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
     <div class="section__container header__container">
       <div class="header__content">
         <p>Prime Cooking</p>
         <h1>Las Mejores recetas</h1>
-        <div class="header__btn"></div>
+        <div class="header__btn">
+  
+        </div>
       </div>
     </div>
   </header>
@@ -234,57 +240,6 @@
     </div>
   </section>
 
-  <section class="section_form_container" id="contact">
-    <div class="form_grid">
-      <div></div>
-      <h2 class="form_grid">Contactanos</h2>
-      <div class="form_container">
-        <form action="/submit" id="formulario" method="POST" novalidate>
-          <div class="form_control">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="given-name" required>
-            <div class="error" id="error-nombre"></div>
-          </div>
-          <div class="form_control">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido" autocomplete="family-name" required>
-            <div class="error" id="error-apellido"></div>
-          </div>
-          <div class="form_control">
-            <label for="sexo">Sexo</label>
-            <select name="sexo" id="sexo" required>
-              <option value="">Seleccione su sexo</option>
-              <option value="masculino">Masculino</option>
-              <option value="femenino">Femenino</option>
-              <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
-            </select>
-            <div class="error" id="error-sexo"></div>
-          </div>
-          <div class="form_control">
-            <label for="correo">Email</label>
-            <input type="email" name="correo" id="correo" placeholder="Correo electrónico" autocomplete="email" required>
-            <div class="error" id="error-correo"></div>
-          </div>
-          <div class="form_control">
-            <textarea name="mensaje" cols="40" rows="5" placeholder="Escribí tu mensaje" id="mensaje" autocomplete="off" required></textarea>
-          </div>
-          <div class="form_control">
-            <div class="">
-              <input type="checkbox" name="aceptar_terminos" id="aceptar-terminos" required>
-              <label for="aceptar-terminos">Acepto términos y condiciones</label>
-            </div>
-            <div class="error" id="error-terminos"></div>
-          </div>
-          <div class="button">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-        <div class="mensaje-enviado" id="mensaje-enviado">
-          Su mensaje se envió correctamente.
-        </div>
-      </div>
-    </div>
-  </section>
 
   <footer class="footer" id="contact">
     <div class="footer__col">
@@ -296,7 +251,10 @@
         <a href="#"><i class="ri-youtube-fill"></i></a>
       </div>
     </div>
-    <div class="footer__col"></div>
+    <div class="footer__col">
+
+    </div>
+    </div>
     <a href="#home" class="footer__bar__link">
       <i class="ri-arrow-up-s-line"></i><span>Inicio</span>
     </a>
@@ -305,6 +263,11 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
 
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
 
+</html>
