@@ -16,14 +16,9 @@
           <div class="form_container">
             <form action="/submit" id="formulario" method="POST" novalidate>
               <div class="form_control">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre Completo</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="given-name" required>
                 <div class="error" id="error-nombre"></div>
-              </div>
-              <div class="form_control">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido" autocomplete="family-name" required>
-                <div class="error" id="error-apellido"></div>
               </div>
               <div class="form_control">
                 <label for="sexo">Sexo</label>
@@ -54,8 +49,10 @@
                 <button type="submit">Enviar</button>
               </div>
             </form>
+
+              
             <div class="mensaje-enviado" id="mensaje-enviado">
-              Su mensaje se envió correctamente.
+            
             </div>
           </div>
         </div>
