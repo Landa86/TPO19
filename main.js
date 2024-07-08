@@ -129,4 +129,3 @@ document.addEventListener("DOMContentLoaded", function () {
   formulario.addEventListener("submit", validarFormulario)
 
 });
-
