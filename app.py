@@ -1,17 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='')
 
 contactos = [
     {"id": 1, "nombre": "Asd", "sexo": "masculino", "email": "juan@example.com"},
     {"id": 2, "nombre": "María", "sexo": "femenino", "email": "maria@example.com"}
 ]
 
-
 @app.route('/')
 def formulario():
     return render_template('index.html')
-
 
 @app.route('/admin')
 def admin():
